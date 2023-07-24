@@ -45,5 +45,5 @@ WantedBy=multi-user.target
 EOF
 
 sudo systemctl daemon-reload
-sudo systemctl enable --now node_exporter
-sudo systemctl status node_exporter
+sudo systemctl enable --now prometheus
+sudo systemctl status prometheus
