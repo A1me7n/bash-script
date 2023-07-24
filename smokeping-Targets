@@ -1,0 +1,255 @@
+
+```ini
+*** Targets ***
+
+probe = FPing
+
+menu = Top
+title = Network Latency Grapher for AhFei
+remark = Welcome to my SmokePing website. \
+         Here you will learn all about the latency of my network.
+
+
+
++ TheBigThree
+menu = 三大运营商
+title = 监控统计
+
+
+++ CMCC
+menu = 移动网络监控
+title = 移动网络监控列表
+host = /TheBigThree/CMCC/CMCC-BJ /TheBigThree/CMCC/CMCC-TJ /TheBigThree/CMCC/CMCC-HLJ  /TheBigThree/CMCC/CMCC-KM /TheBigThree/CMCC/CMCC-SH /TheBigThree/CMCC/CMCC-SC /TheBigThree/CMCC/CMCC-GZ
+ 
++++ CMCC-BJ
+menu = 北京移动
+title = 北京移动
+alerts = someloss
+host = 221.130.33.52
+ 
++++ CMCC-TJ
+menu = 天津移动
+title = 天津移动
+alerts = someloss
+host = 211.137.160.5
+
++++ CMCC-HLJ
+menu = 黑龙江移动
+title = 黑龙江移动
+alerts = someloss
+host = 211.137.241.35
+
++++ CMCC-KM
+menu = 昆明移动
+title = 昆明移动
+alerts = someloss
+host = 39.130.140.2
+ 
++++ CMCC-SH
+menu = 上海移动
+title = 上海移动
+alerts = someloss
+host = 221.183.55.22
+
++++ CMCC-SC
+menu = 四川移动
+title = 四川移动
+alerts = someloss
+host = 218.201.4.3
+ 
++++ CMCC-GZ
+menu = 广东移动
+title = 广东移动
+alerts = someloss
+host = 211.136.192.6
+
+
+++ CU
+menu = 联通网络监控
+title = 联通网络监控列表
+host = /TheBigThree/CU/CU-BJ /TheBigThree/CU/CU-TJ /TheBigThree/CU/CU-HLJ /TheBigThree/CU/CU-SH /TheBigThree/CU/CU-SC /TheBigThree/CU/CU-GZ
+ 
++++ CU-BJ
+menu = 北京联通
+title = 北京联通
+alerts = someloss
+host = 61.135.169.121
+ 
++++ CU-TJ
+menu = 天津联通
+title = 天津联通
+alerts = someloss
+host = 103.24.228.1
+
++++ CU-HLJ
+menu = 黑龙江联通
+title = 黑龙江联通
+alerts = someloss
+host = 202.97.224.69
+ 
++++ CU-SH
+menu = 上海联通
+title = 上海联通
+alerts = someloss
+host = 211.95.52.116
+
++++ CU-SC
+menu = 四川联通
+title = 四川联通
+alerts = someloss
+host = 119.6.6.6
+ 
++++ CU-GZ
+menu = 广东联通
+title = 广东联通
+alerts = someloss
+host = 221.5.88.88
+
+
+++ CT
+menu = 电信网络监控
+title = 电信网络监控列表
+host = /TheBigThree/CT/CT-BJ /TheBigThree/CT/CT-TJ /TheBigThree/CT/CT-HLJ /TheBigThree/CT/CT-SH  /TheBigThree/CT/CT-SC /TheBigThree/CT/CT-SZ /TheBigThree/CT/CT-GZ
+
++++ CT-BJ
+menu = 北京电信
+title = 北京电信
+alerts = someloss
+host = 202.96.199.133
+ 
++++ CT-TJ
+menu = 天津电信
+title = 天津电信
+alerts = someloss
+host = 219.150.32.132
+ 
++++ CT-HLJ
+menu = 黑龙江电信
+title = 黑龙江电信
+alerts = someloss
+host = 219.147.198.242
+ 
++++ CT-SH
+menu = 上海电信
+title = 上海电信
+alerts = someloss
+host = 180.153.28.5
+
++++ CT-SC
+menu = 四川电信
+title = 四川电信
+alerts = someloss
+host = 61.139.2.69
+ 
++++ CT-SZ
+menu = 深圳电信
+title = 深圳电信
+alerts = someloss
+host = 103.44.253.69
+ 
++++ CT-GZ
+menu = 广东电信
+title = 广东电信
+alerts = someloss
+host = 113.111.211.22
+
+
+
++ global
+menu = 国际线路
+title = 监控统计
+host = /global/cf /global/yt /global/gg /global/sbd /global/cmi
+
+++ cf
+menu = Cloudflare
+title = Cloudflare
+alerts = someloss
+host = www.cloudflare.com
+
+++ yt
+menu = YouTube
+title = YouTube
+alerts = someloss
+host = www.youTube.com
+
+++ gg
+menu = google
+title = google
+alerts = someloss
+host = www.google.com
+
+++ sbd
+menu = 美国斯巴达
+title = 美国斯巴达
+alerts = someloss
+host = 45.154.214.42
+
+++ cmi
+menu = 香港CMI
+title = 香港CMI
+alerts = someloss
+host = 117.18.13.248
+
+++ bd
+menu = 百度
+title = 百度
+alerts = someloss
+host = www.baidu.com
+
+
+
++ DomesticServer
+menu = 国内服务器
+title = 监控统计
+host = 
+
+
+
++ HKServer
+menu = 香港服务器
+title = 监控统计
+host = 
+
+
+
++ USServer
+menu = 北美服务器
+title = 监控统计
+host = 
+
+
+
++ EastAsiaServer
+menu = 东亚服务器
+title = 监控统计
+host = 
+
+
+
++ SoutheastAsiaServer
+menu = 东南亚服务器
+title = 监控统计
+host = 
+
+
+
++ CWAsiaServer
+menu = 中西亚服务器
+title = 监控统计
+host = 
+
+
+
++ EUServer
+menu = 欧洲服务器
+title = 监控统计
+host = 
+
+
+
++ OtherRegionServer
+menu = 其他地区服务器
+title = 监控统计
+host = 
+
+```
