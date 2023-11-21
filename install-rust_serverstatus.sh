@@ -22,11 +22,11 @@ fi
 
 # step 0: prepare
 OS_ARCH=$ARCHITECTURE
-WORKDIR=${1}     # 安装目录
-ssr_uid=${2}      # rust_serverstatus 配置文件里用户名对应的密码
-passwd=${3}     # rust_serverstatus 配置文件里的用户名
-server_address=${4}      # rust_serverstatus 服务端网址
-user_name=${5}   # 本机运行这个 rust_serverstatus 的用户
+server_address=${1}      # rust_serverstatus 服务端网址
+WORKDIR=${2}     # 安装目录
+user_name=${3}   # 本机运行这个 rust_serverstatus 的用户
+ssr_uid=${4}      # rust_serverstatus 配置文件里用户名对应的密码
+passwd=${5}     # rust_serverstatus 配置文件里的用户名
 install_server_or_not=${6} # 空着就不安装服务端
 
 mkdir -p ${WORKDIR}
