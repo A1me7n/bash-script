@@ -25,8 +25,8 @@ OS_ARCH=$ARCHITECTURE
 server_address=${1}      # rust_serverstatus 服务端网址
 WORKDIR=${2}     # 安装目录
 user_name=${3}   # 本机运行这个 rust_serverstatus 的用户
-ssr_uid=${4}      # rust_serverstatus 配置文件里用户名对应的密码
-passwd=${5}     # rust_serverstatus 配置文件里的用户名
+ssr_uid=${4}     # rust_serverstatus 配置文件里的用户名
+passwd=${5}      # rust_serverstatus 配置文件里用户名对应的密码
 install_server_or_not=${6} # 空着就不安装服务端
 
 mkdir -p ${WORKDIR}
