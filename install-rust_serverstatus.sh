@@ -12,7 +12,7 @@ apt-get install -y curl unzip
 arch=$(uname -m)
 # 设置 ARCHITECTURE 变量
 if [[ $arch == "aarch64" ]]; then
-    ARCHITECTURE="arm64"
+    ARCHITECTURE="aarch64"
 elif [[ $arch == "x86_64" ]]; then
     ARCHITECTURE="x86_64"
 else
